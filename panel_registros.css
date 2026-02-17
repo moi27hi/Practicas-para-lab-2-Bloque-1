@@ -15,11 +15,11 @@ th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
 th { background-color: #f8f9fa; }
 
 
-
-        /* Diseño del botón Ir a Inicio */
 .btn-inicio {
     display: inline-block;
     margin-top: 30px;
+    margin-right: 10px; /* Espacio horizontal entre botones */
+    margin-bottom: 10px; /* Espacio vertical si se amontonan */
     padding: 12px 25px;
     background-color: #2c3e50; /* Un azul oscuro elegante */
     color: white;
@@ -29,10 +29,7 @@ th { background-color: #f8f9fa; }
     border-radius: 50px; /* Bordes muy redondeados */
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
 }
-
-
 
 /* Efecto al pasar el mouse */
 .btn-inicio:hover {
@@ -47,4 +44,3 @@ th { background-color: #f8f9fa; }
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
