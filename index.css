@@ -58,6 +58,16 @@ li {
     font-weight: bold;
 }
 
+/* 1. AGREGA ESTO: El contenedor para que no se amontonen */
+.contenedor-flotante {
+    position: fixed;   /* Los fija a la pantalla */
+    bottom: 20px;      /* Distancia desde abajo */
+    left: 20px;        /* Distancia desde la izquierda */
+    display: flex;     /* Permite ordenarlos */
+    flex-direction: column; /* Uno sobre otro */
+    gap: 10px;         /* Espacio de 10px entre ellos */
+    z-index: 1000;     /* Siempre visibles sobre el fondo */
+}
 
         /* Diseño del botón Ir a Inicio */
 .btn-inicio {
@@ -72,9 +82,10 @@ li {
     border-radius: 50px; /* Bordes muy redondeados */
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 120px; /* Opcional: para que todos midan lo mismo */
 
 }
-
 
 
 /* Efecto al pasar el mouse */
