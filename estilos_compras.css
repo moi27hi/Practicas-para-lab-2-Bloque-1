@@ -58,35 +58,36 @@ li {
     font-weight: bold;
 }
 
+/* 1. Modificamos el contenedor para que se ubique en la esquina */
+.contenedor-flotante {
+    position: fixed;   /* Esto lo deja fijo en la pantalla */
+    bottom: 20px;      /* Separación del borde inferior */
+    left: 20px;        /* Separación del borde izquierdo */
+    display: flex;     /* Activa el modo flexible */
+    flex-direction: column; /* Alinea los botones uno arriba del otro */
+    gap: 10px;         /* Crea un espacio uniforme entre cada botón */
+    z-index: 1000;     /* Asegura que los botones no queden detrás de nada */
+}
 
-        /* Diseño del botón Ir a Inicio */
+/* 2. Limpiamos la clase .btn-inicio (asegúrate de que NO tenga position: fixed) */
 .btn-inicio {
     display: inline-block;
-    margin-top: 30px;
     padding: 12px 25px;
-    background-color: #2c3e50; /* Un azul oscuro elegante */
+    background-color: #2c3e50; 
     color: white;
-    text-decoration: none; /* Quita el subrayado */
+    text-decoration: none; 
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    border-radius: 50px; /* Bordes muy redondeados */
+    border-radius: 50px; 
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    text-align: center;
+    min-width: 120px; /* Opcional: para que todos midan lo mismo */
 }
 
-
-
-/* Efecto al pasar el mouse */
+/* Efectos de hover y active que ya tenías */
 .btn-inicio:hover {
-    background-color:crimson;
-    transform: translateY(-3px); /* Se eleva un poquito */
+    background-color: crimson;
+    transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    color: #ecf0f1;
-}
-
-/* Efecto al hacer clic */
-.btn-inicio:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
